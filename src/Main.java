@@ -13,15 +13,15 @@ public class Main {
         }
 
 
-        Uzumaki uzumaki1 = (Uzumaki) createObject("Nagato");
+        Uzumaki uzumaki1 = (Nagato) createObject("uzumaki1");
         System.out.println(uzumaki1.getName());
         ((Printable)uzumaki1).print();
         System.out.println("--------------------");
-        Uzumaki uzumaki2 = (Uzumaki) createObject("Minato");
+        Uzumaki uzumaki2 = (Minato) createObject("uzumaki2");
         System.out.println(uzumaki2.getName());
         ((Printable)uzumaki2).print();
         System.out.println("---------------------");
-        Uzumaki uzumaki3 = (Uzumaki) createObject("Naruto");
+        Uzumaki uzumaki3 = (Naruto) createObject("uzumaki3");
         System.out.println(uzumaki3.getName());
         ((Printable)uzumaki3).print();
         System.out.println("----------------------");
