@@ -13,28 +13,24 @@ public class Main {
         }
 
 
-        Uzumaki uzumaki1 = createObject("Nagato");
+        Uzumaki uzumaki1 = (Uzumaki) createObject("Nagato");
         System.out.println(uzumaki1.getName());
         ((Printable)uzumaki1).print();
         System.out.println("--------------------");
-        Uzumaki uzumaki2 = createObject("Minato");
+        Uzumaki uzumaki2 = (Uzumaki) createObject("Minato");
         System.out.println(uzumaki2.getName());
         ((Printable)uzumaki2).print();
         System.out.println("---------------------");
-        Uzumaki uzumaki3 = createObject("Naruto");
+        Uzumaki uzumaki3 = (Uzumaki) createObject("Naruto");
         System.out.println(uzumaki3.getName());
         ((Printable)uzumaki3).print();
         System.out.println("----------------------");
 
-
-
-
-        
         
         
     }
 
-    public static Uzumaki createObject(String className) {
+    public static Printable createObject(String className) {
         switch (className) {
             case "uzumaki1":
                 return new Nagato("Nagato", "Chibaku Tensei");
@@ -43,7 +39,7 @@ public class Main {
             case "uzumaki3":
                 return new Naruto("Naruto", "Ninjutsu");
             default:
-                return new Uzumaki("Ashina");
+                return null;
         }
     }
 }
