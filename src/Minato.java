@@ -12,11 +12,11 @@ public class Minato extends Uzumaki implements Printable {
         return speed;
     }
 
+
+
     @Override
-    public String prinT() {
-       return " " + getSpeed();
+    public void print() {
+        System.out.println(getSpeed());
 
     }
-
-
 }

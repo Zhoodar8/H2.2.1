@@ -1,8 +1,12 @@
 public class Uzumaki  {
-    String name;
+    private String name;
 
     public Uzumaki(String name){
         this.name = name;
 
+    }
+
+    public String getName() {
+        return name;
     }
 }
